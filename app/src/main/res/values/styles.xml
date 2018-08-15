@@ -10,6 +10,7 @@
     </style>
 
 
+    <!--toolbar的一些配置，主题-->
     <style name="ToolBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
 
         <!--隐藏掉Action Bar-->
@@ -19,8 +20,25 @@
         <item name="actionMenuTextColor">@android:color/white</item>
         <!-- 菜单图标颜色-->
         <item name="colorControlNormal">@android:color/white</item>
+
     </style>
 
+    <!--toolbar的Theme的设置，针对popup设置-->
+    <style name="toolBarPop" parent="AppTheme">
+
+        <item name="android:colorBackground">#ff0000</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuTheme</item>
+        <!--去掉弹窗右边的和屏幕之间的空隙-->
+        <item name="android:paddingRight">-5dp</item>
+    </style>
+
+    <!--Toolbar弹出popup主题的设置-->
+    <style name="OverflowMenuTheme" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!--这个属性设置为false，就能使得popup在Toolbar的下面显示-->
+        <item name="overlapAnchor">false</item>
+    </style>
 
 
 </resources>

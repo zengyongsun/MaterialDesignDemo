@@ -4,6 +4,7 @@
 
     <item
         android:id="@+id/item_0"
+        android:icon="@android:drawable/ic_lock_lock"
         android:title="item_0"/>
 
     <item
